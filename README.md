@@ -5,14 +5,17 @@ This config can be used by anybody, as this has some everyday security policies 
 
 ## How to Use
 1. Launch PowerShell as Administrator.
-2. Navigate to the config file location.
-3. The script is unsigned and from the internet so you will need to momentarily bypass the execution policy. > ``Set-ExecutionPolicy Bypass -File secpol-config.ps1``
-5. This will run the file, but the function needs calling. > ``Invoke-secpolconf``
+2. Navigate to the config file's directory.
+3. The script is unsigned and from the internet so you will need to momentarily bypass the execution policy.
+```
+Set-ExecutionPolicy Bypass -Force
+```
+4. Run the script. No need to call the function as it is called at the end of the script.
 6. When done, you will receive an output message stating that the policies have been configured.
 
 ## Features
 - All files are saved in a folder onto the current user's Desktop.
-- Backup of original config.
+- Backup of original config gets created.
 - Modify Password Policies.
 - Modify Account Lockout Policies.
 - Modify Audit Policies.
