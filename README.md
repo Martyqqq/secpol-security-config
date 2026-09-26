@@ -13,6 +13,9 @@ Set-ExecutionPolicy Bypass -Force
 4. Run the script. No need to call the function as it is called at the end of the script.
 6. When done, you will receive an output message stating that the policies have been configured.
 
+![commands](/assets/1.PNG)
+![security policy configs](/assets/2.PNG)
+
 ## Features
 - All files are saved in a folder onto the current user's Desktop.
 - Backup of original config gets created.
